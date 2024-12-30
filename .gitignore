@@ -1,0 +1,62 @@
+# 기본 Visual Studio 관련 설정
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# 빌드 아티팩트
+bin/
+obj/
+TestResults/
+*.dll
+*.exe
+*.app
+*.pdb
+*.cache
+*.ilk
+*.log
+*.vsix
+*.nupkg
+
+# 패키지 및 복원 관련 파일
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# 리눅스/맥OS 파일
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Windows 파일
+Thumbs.db
+desktop.ini
+
+# Azure DevOps 관련
+.vscode/
+.parcel-cache/
+.idea/
+.vscode/
+.vsconfig
+
+# 확장된 Ignore 규칙 (WPF/프로젝트 특화)
+app.publish/
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+*.dbmdl
+*.jfm
+*.tlog
+*.ipch
+*.log
+*.vspscc
+
+# Git 보안
+!/.gitattributes
+!.gitignore
