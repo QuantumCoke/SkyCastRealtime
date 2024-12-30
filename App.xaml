@@ -7,5 +7,14 @@
         <DataTemplate DataType="{x:Type viewModel:MainViewModel}">
             <view:MainWindow/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:WeatherDetailViewModel}">
+            <view:WeatherDetailView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:WeatherSummaryViewModel}">
+            <view:WeatherSummaryView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:WeatherAlertViewModel}">
+            <view:WeatherAlertView/>
+        </DataTemplate>
     </Application.Resources>
 </Application>

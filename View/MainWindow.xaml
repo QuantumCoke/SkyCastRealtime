@@ -9,7 +9,9 @@
 
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="Settings" Command="{Binding NavigateCommand}" CommandParameter="Settings" />
+            <MenuItem Header="Summary" Command="{Binding NavigateCommand}" CommandParameter="WeatherSummary" />
+            <MenuItem Header="Detail" Command="{Binding NavigateCommand}" CommandParameter="WeatherDetail" />
+            <MenuItem Header="Alert" Command="{Binding NavigateCommand}" CommandParameter="WeatherAlert" />
         </Menu>
         <ContentControl Content="{Binding CurrentViewModel}" />
     </DockPanel>

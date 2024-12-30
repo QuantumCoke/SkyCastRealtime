@@ -49,8 +49,14 @@ public partial class App : Application
         services.AddSingleton<Navigator>();
 
         services.AddTransient<MainViewModel>();
+        services.AddTransient<WeatherDetailViewModel>();
+        services.AddTransient<WeatherSummaryViewModel>();
+        services.AddTransient<WeatherAlertViewModel>();
 
         services.AddTransient<MainWindow>();
+        services.AddTransient<WeatherDetailView>();
+        services.AddTransient<WeatherSummaryView>();
+        services.AddTransient<WeatherAlertView>();
     }
 
     /// <summary>
@@ -60,5 +66,8 @@ public partial class App : Application
     {
         var navigationService = ServiceProvider.GetRequiredService<Navigator>();
 
+        navigationService.RegisterViewModel<WeatherDetailViewModel>("WeatherDetail");
+        navigationService.RegisterViewModel<WeatherSummaryViewModel>("WeatherSummary");
+        navigationService.RegisterViewModel<WeatherAlertViewModel>("WeatherAlert");
     }
 }
